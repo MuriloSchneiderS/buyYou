@@ -7,9 +7,14 @@ $white: #fff;
 $black: #181f27;
 $darken: #2b2b2b;
 
-$primary: #2b98f0;
-$secondary: #f3e53d;
 
+$primary: #216363;
+$secondary: #36ffee;
+
+$tomato: #ff3647;
+$cyan: #36ffee;
+$darken-cyan: #226363;
+$dark-cyan: #181f27;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
