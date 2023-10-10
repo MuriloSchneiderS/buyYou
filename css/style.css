@@ -56,7 +56,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  background-color: #181f27;
+  background-color: #181f27 !important;
   color: white;
   display: block; 
 }
@@ -1620,12 +1620,14 @@ pre {
   background-color: #181f27;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border-end-end-radius: 15px !important;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; 
+  transition: .5s ease;
+}
   @media screen and (prefers-reduced-motion: reduce) {
     .form-control {
       -webkit-transition: none;
@@ -1638,6 +1640,7 @@ pre {
     color: #181f27;
     background-color: #fff;
     border-color: #36FFEE;
+    border-end-end-radius: 0 !important;
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
@@ -5330,7 +5333,8 @@ button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
 .bg-white {
-  background-color: #fff !important; }
+  background-color: #36ffee;
+}
 
 .bg-transparent {
   background-color: transparent !important; }
@@ -8740,14 +8744,24 @@ h1, h2, h3, h4, h5,
 
 .ftco-appointment {
   background-position: center center !important;
-  position: relative; }
+  position: relative; 
+}
+.ftco-appointment .wrap-appointment {
+  -webkit-box-shadow: 0px 12px 31px -16px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 12px 31px -16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 12px 31px -16px rgba(0, 0, 0, 0.15); 
+  border-top: solid 2px #ff3647;
+  border-top-left-radius: 15px;
+  transition: 1s ease;
+}
+@media (min-width: 992px) {
   .ftco-appointment .wrap-appointment {
-    -webkit-box-shadow: 0px 12px 31px -16px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 12px 31px -16px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 12px 31px -16px rgba(0, 0, 0, 0.15); }
-    @media (min-width: 992px) {
-      .ftco-appointment .wrap-appointment {
-        margin-top: -50px; } }
+    margin-top: -50px; 
+  } 
+}
+.wrap-appointment:hover{
+  border-top: solid 2px #216363;
+}
 
 .appointment .form-group {
   position: relative;
@@ -8783,16 +8797,17 @@ h1, h2, h3, h4, h5,
 
 .appointment .form-control {
   border: transparent;
-  background: #fff !important;
-  color: rgba(0, 0, 0, 0.8) !important;
+  background: #216363 !important;
+  color: #fff !important;
   font-size: 14px;
   font-weight: 500;
   border-radius: 0;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  padding: 0;
+  padding-left: 5px;
   height: 34px !important;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1) !important; }
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1) !important; 
+}
   .appointment .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: rgba(0, 0, 0, 0.5); }
