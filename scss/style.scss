@@ -4,12 +4,17 @@
 $font-primary: 'Roboto',Arial, sans-serif;
 
 $white: #fff;
-$black: #000000;
-$darken: #33313b;
+$black: #181f27;
+$darken: #2b2b2b;
 
-$primary: #2b98f0;
-$secondary: #f3e53d;
 
+$primary: #216363;
+$secondary: #36ffee;
+
+$tomato: #ff3647;
+$cyan: #36ffee;
+$darken-cyan: #226363;
+$dark-cyan: #181f27;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -179,7 +184,7 @@ h1, h2, h3, h4, h5,
 					padding-right: 0;
 					padding-top: .7rem;
 					padding-bottom: .7rem;
-					color: rgba(0,0,0,.7);
+					color: rgba(24,31,39,.7);
 					&:hover{
 						color: $white;
 						&:before{
