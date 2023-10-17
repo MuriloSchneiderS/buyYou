@@ -238,6 +238,11 @@ select option{
   padding: 25px;
 }
 
+.heading {
+  font-family: aristaPro !important;
+  color: #ff3647 !important;
+}
+
 input,
 button,
 select,
@@ -8581,11 +8586,11 @@ h1, h2, h3, h4, h5,
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #181F27;
+    color: #226363;
     border-bottom: 2px solid #e6e6e6; }
     .services .btn-custom:hover {
-      color: #36FFEE;
-      border-color: #36FFEE; }
+      color: #36ffee;
+      border-color: #ff3647; }
 
 #section-counter {
   position: relative;
@@ -8719,7 +8724,8 @@ h1, h2, h3, h4, h5,
       color: rgba(0, 0, 0, 0.5); }
   .staff:hover .ftco-social li a, .staff:focus .ftco-social li a {
     background: #216363;
-    color: #fff; }
+    color: #fff; 
+  }
 
 .time-open-wrap {
   border-radius: 5px;
